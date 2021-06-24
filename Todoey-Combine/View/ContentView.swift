@@ -15,6 +15,9 @@ struct ContentView: View {
         
         NavigationView {
             List {
+                ForEach(viewModel.allTask) { task in
+                    
+                }
                 NavigationLink(destination: TaskDetailScreen(viewModel: TableDetailViewModel(taskId: 0))) {
                     TableCellView()
                 }
